@@ -15,17 +15,25 @@ const inputButtons = [
 ]
 
 class ReactCalculator extends Component {
+  constructor(){
+    super();
+    this.state = {
+      inputValue: 0
+    }
+  }
   render(){
     return(
       <View style={Style.rootContainer}>
-        <View style={Style.displayContainer}/>
+        <View style={Style.displayContainer}>
+          <Text style={Style.displayText}>{this.state.inputValue}</Text>
+        <View/>
         <View style={Style.inputContainer}>
           {this._renderInputButtons()}
         </View>
       </View>
     )
   }
-  
+
   _onInputButtonPressed(input){
     alert(input)
   }
