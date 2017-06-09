@@ -1,6 +1,6 @@
 # FunctionalCalc
 
-Just an oridinary calculator built on React Native as a test project
+Just an ordinary calculator built on React Native as a test project
 
 ## Tech Stack
 React Native
